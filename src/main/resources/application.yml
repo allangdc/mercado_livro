@@ -1,0 +1,12 @@
+  spring:
+    application:
+      name: mercado-livro
+    jpa:
+      hibernate:
+        ddl-auto: update
+        show-sql: true
+    datasource:
+      url: jdbc:mysql://localhost:3306/mlivro_db
+      username: mlivro_user
+      password: mlivro_password
+      driver-class-name: com.mysql.cj.jdbc.Driver
