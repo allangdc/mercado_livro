@@ -1,45 +1,39 @@
 package com.mercadolivro.service
 
-import com.mercadolivro.controller.request.PostCustomerRequest
-import com.mercadolivro.controller.request.PutCustomerRequest
 import com.mercadolivro.model.CustomerModel
+import com.mercadolivro.repository.CustomerRepository
 import org.springframework.stereotype.Service
 
 @Service
-class CustomerService {
-    val customers = mutableListOf<CustomerModel>()
+class CustomerService(val customerRepository: CustomerRepository) {
 
     fun getAll(name: String?): List<CustomerModel> {
         name?.let {
-            return customers.filter { it.name.contains(name, true) }
+            return customerRepository.findByNameContaining(name = it)
         }
-        return customers
+        return customerRepository.findAll().toList()
     }
 
-    fun create(customer: PostCustomerRequest) {
-//        val id: Int = if (customers.isNotEmpty()) {
-//            customers.last().id.toInt() + 1
-//        } else {
-//            1
-//        }
-        val id: Int = customers.lastOrNull()?.id?.toInt()?.plus(1) ?: 1
-
-        val customer = CustomerModel(id.toString(), customer.name, customer.email)
-        customers.add(customer)
+    fun create(customer: CustomerModel) {
+        customerRepository.save(customer)
     }
 
-    fun getCustomer(id: String): CustomerModel {
-        return customers.filter { it.id == id }.first()
+    fun getCustomer(id: Int): CustomerModel {
+        return customerRepository.findById(id).orElseThrow()
     }
 
-    fun update(id: String, customer: PutCustomerRequest) {
-        customers.first { it.id == id }.let {
-            it.name = customer.name
-            it.email = customer.email
+    fun update(customer: CustomerModel) {
+        val id: Int = customer.id ?: throw Exception("ID nulo é inválido")
+        if (!customerRepository.existsById(id)) {
+            throw Exception("Cliente não encontrado")
         }
+        customerRepository.save(customer)
     }
 
-    fun delete(id: String) {
-        customers.removeIf{ it.id == id }
+    fun delete(id: Int) {
+        if (!customerRepository.existsById(id)) {
+            throw Exception("Cliente não encontrado")
+        }
+        customerRepository.deleteById(id)
     }
 }
