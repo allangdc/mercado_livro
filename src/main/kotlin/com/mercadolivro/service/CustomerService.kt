@@ -14,13 +14,9 @@ class CustomerService(val customerRepository: CustomerRepository) {
         return customerRepository.findAll().toList()
     }
 
-    fun create(customer: CustomerModel) {
-        customerRepository.save(customer)
-    }
+    fun create(customer: CustomerModel) = customerRepository.save(customer)
 
-    fun getById(id: Int): CustomerModel {
-        return customerRepository.findById(id).orElseThrow()
-    }
+    fun getById(id: Int): CustomerModel = customerRepository.findById(id).orElseThrow()
 
     fun update(customer: CustomerModel) {
         val id: Int = customer.id ?: throw Exception("ID nulo é inválido")

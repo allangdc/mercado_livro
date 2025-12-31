@@ -1,0 +1,454 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-12-31T05:38:57.617Z",
+    "__export_source": "insomnia.desktop.app:v10.3.0",
+    "resources": [
+        {
+            "_id": "req_b1421068aef94c788da953621a0aee75",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767137424417,
+            "created": 1767135067971,
+            "url": "http://localhost:8080/book/active",
+            "name": "ListActiveBooks",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_819636d2dd034eea9b46b41d6540f97d",
+                    "name": "name",
+                    "value": "Allan",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767071959069,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "parentId": "wrk_b5b5b7f0331745e6ae6b27dccd1bf2c5",
+            "modified": 1767071939395,
+            "created": 1767071939395,
+            "name": "Book",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1767071939395,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_b5b5b7f0331745e6ae6b27dccd1bf2c5",
+            "parentId": null,
+            "modified": 1766698510418,
+            "created": 1766698510418,
+            "name": "Kotlin Aula",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_15f02b98f2f14149bad22aa1a25bc28a",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767135096330,
+            "created": 1767135096330,
+            "url": "http://localhost:8080/book",
+            "name": "ListBooks",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_819636d2dd034eea9b46b41d6540f97d",
+                    "name": "name",
+                    "value": "Allan",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767071959019,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f29c7b81356d47b9ad9774b2d02b8eee",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767138252614,
+            "created": 1767138228810,
+            "url": "http://localhost:8080/book/2",
+            "name": "GetBookId",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_819636d2dd034eea9b46b41d6540f97d",
+                    "name": "name",
+                    "value": "Allan",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767071958994,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_355a308529774838ba9a56ba920b7a13",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767144828696,
+            "created": 1767139648926,
+            "url": "http://localhost:8080/book/2",
+            "name": "Delete Book",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_819636d2dd034eea9b46b41d6540f97d",
+                    "name": "name",
+                    "value": "Allan",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767071958981.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c6cc5e13c2d244c2b52c4e2acce55729",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767139672925,
+            "created": 1767071952459,
+            "url": "http://localhost:8080/book",
+            "name": "Post Create Book",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Foi\",\n\t\"price\": 900.10,\n\t\"customer_id\": 1\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767071958969,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a1cfd5deb1d94a4a9842ab0837383119",
+            "parentId": "fld_1ffb5317474e491e98b3840415b8de6a",
+            "modified": 1767157935420,
+            "created": 1767157896126,
+            "url": "http://localhost:8080/book/2",
+            "name": "Put Update Book",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"price\": 112.59\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1767019290543,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_17450379977840b1b9bcf5cd6f051402",
+            "parentId": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "modified": 1767072123180,
+            "created": 1766698519527,
+            "url": "http://localhost:8080/customer",
+            "name": "ListCustomers",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_819636d2dd034eea9b46b41d6540f97d",
+                    "name": "name",
+                    "value": "Allan",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1766966622117,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "parentId": "wrk_b5b5b7f0331745e6ae6b27dccd1bf2c5",
+            "modified": 1766966613941,
+            "created": 1766966613941,
+            "name": "Customer",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1766966613941,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_3911795db5de4970aa1e69f440f29344",
+            "parentId": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "modified": 1767072047440,
+            "created": 1766941484399,
+            "url": "http://localhost:8080/customer/1",
+            "name": "GetCustomerId",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1766966622017,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e86ae87073de4bd0bafaaeb7a7b08a3b",
+            "parentId": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "modified": 1767072141834,
+            "created": 1766875037878,
+            "url": "http://localhost:8080/customer",
+            "name": "Post Create Customer",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Gustavo\",\n\t\"email\": \"gustavo@email.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1766966621967,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_80bace708310473a8cf63593b69ed5b7",
+            "parentId": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "modified": 1767057822097,
+            "created": 1766946835055,
+            "url": "http://localhost:8080/customer/2",
+            "name": "Put Update Customer",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Allan\",\n\t\"email\": \"allan@imail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1766966621942,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4f6e52c87d034e9abaa794d548316fca",
+            "parentId": "fld_3bf0e0cbde5a4ed8b077c9d5916561c7",
+            "modified": 1766966632310,
+            "created": 1766947012001,
+            "url": "http://localhost:8080/customer/1",
+            "name": "Delete Customer",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1766966621929.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_224df055a4dd97e87c4eb4c96a11007817b7fdeb",
+            "parentId": "wrk_b5b5b7f0331745e6ae6b27dccd1bf2c5",
+            "modified": 1766698510425,
+            "created": 1766698510425,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1766698510425,
+            "environmentType": "kv",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_224df055a4dd97e87c4eb4c96a11007817b7fdeb",
+            "parentId": "wrk_b5b5b7f0331745e6ae6b27dccd1bf2c5",
+            "modified": 1766698510429,
+            "created": 1766698510429,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
